@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Confetti from "react-confetti";
-import Sparkles from "./Sparkles";
-import FireworksDisplay from './FireworksDisplay'
 
 const quotes = [
   {
