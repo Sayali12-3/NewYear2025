@@ -45,7 +45,7 @@ const quotes = [
   },
   {
     text: "🍾Celebrate every moment of the New Year!🍾",
-    color: "#C2FFB5",
+    color: "#330F14",
     animation: "confetti",
   },
 ];
@@ -96,38 +96,35 @@ const QuoteGenerator = () => {
         Power Up with Quotes
       </button>
       {showCard && (
-        <motion.div
-        initial={{
-          opacity: 0,
-          scale: 0.8,
-          rotateY: 180, // Initial 180-degree rotation
-        }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          rotateY: 0, // Rotate to 0 degrees for the final state
-          backgroundColor: popupColor,
-        }}
-        transition={{
-          duration: 1, // Set a duration for the transition to make the effect smooth
-          backgroundColor: { duration: 0.8, ease: "easeInOut" },
-        }}
-        style={{
-          position: "absolute",
-          top: "40%",
-          left: "35%",
-          backgroundColor: "#CCCCFF",
-          color: "white",
-          padding: "20px",
-          borderRadius: "10px",
-          boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.3)",
-          transformStyle: "preserve-3d", // Ensures the 3D effect works
-          transform: "perspective(600px)", // Adds perspective for a more realistic 3D effect
-        }}
-      >
-        <h2>🎉 Happy New Year 2025 🎉</h2>
-        <p style={{ fontSize: "18px", fontStyle: "italic" }}>{quote}</p>
-      </motion.div>
+      <motion.div
+      initial={{ opacity: 0, scale: 0.8,rotateY: 180,}}
+      animate={{ opacity: 1, scale: 1,rotateY: 0, backgroundColor: popupColor }}
+      transition={{
+        duration: 0.5,
+        backgroundColor: { duration: 0.8, ease: "easeInOut" },
+      }}
+      style={{
+        // position: "absolute",
+        // position: "fixed",
+        // top: "50%",
+        // left: "50%",
+        // transform: "translate(-50%, -50%)",
+        backgroundColor: popupColor,
+        color: "white",
+        padding: "20px",
+        borderRadius: "10px",
+        boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.3)",
+        transformStyle: "preserve-3d", // Ensures the 3D effect works
+        transform: "perspective(600px)", // Adds perspective for a more realistic 3D effect
+       
+        // width: "50%",  // Adjust the width as needed
+        // maxWidth: "500px",  // Optional: set a max-width to avoid it being too large
+      }}
+    >
+      <p style={{ fontSize: "15px", fontStyle: "bold" }}>🎉 Happy New Year 2025 🎉</p>
+      <p style={{ fontSize: "18px", fontStyle: "italic" }}>{quote}</p>
+    </motion.div>
+    
       )}
       {celebrate && renderAnimation()}
     </div>

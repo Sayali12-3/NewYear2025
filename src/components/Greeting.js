@@ -31,7 +31,7 @@ const Greeting = () => {
   >
       
      
-      <h1 style={{ color: "#EFBF04" }}>🎉 Happy New Year {year}! 🎉</h1> {/* Dark Purple for contrast */}
+      <h2 style={{ color: "#EFBF04" }}>🎉 Happy New Year {year}! 🎉</h2> {/* Dark Purple for contrast */}
       <p style={{ color: "#FF2C2C", fontSize: "20px",fontWeight: "bold" }}>Wishing you a year full of success, joy, and great code!</p> {/* Dark Blue for contrast */}
     <CountdownTimer />
       <QuoteGenerator />

@@ -5,7 +5,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
+@media (max-width: 600px) {
+  .popup {
+    width: 80%; /* Adjust width for mobile */
+    padding: 15px;
+  }
+}
 .App {
   text-align: center;
   padding: 20px;
